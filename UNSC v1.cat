@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="0f09-b5d1-4420-7df7" name="UNSC" revision="2" battleScribeVersion="2.03" authorName="Rose Napier,  NapierArts" library="false" gameSystemId="8913-c2d7-6830-9155" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="96a7-cc44-f061-1538" name="Human" hidden="false"/>
+    <categoryEntry id="b488-2e25-d904-ceb2" name="UNSC" hidden="false"/>
+    <categoryEntry id="1654-d469-f19d-c3e6" name="Marine" hidden="false"/>
+    <categoryEntry id="f69b-28bf-66a5-39a9" name="ODST" hidden="false"/>
+    <categoryEntry id="eada-6891-1cb2-76ff" name="Officer" hidden="false"/>
+    <categoryEntry id="20e1-6c7a-3447-636b" name="SPARTAN" hidden="false"/>
+    <categoryEntry id="c994-be67-a873-4215" name="SPARTAN II" hidden="false"/>
+    <categoryEntry id="e022-b488-840c-894f" name="SPARTAN III" hidden="false"/>
+    <categoryEntry id="f118-9903-7f6e-9576" name="Sergeant" hidden="false"/>
+    <categoryEntry id="4836-44bc-4d98-b2de" name="Character" hidden="false"/>
+    <categoryEntry id="0253-e074-481c-004c" name="Veteran" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="2b5d-5921-caf7-37e3" name="Combat Patrol" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f39a-038d-1fd8-5ab1" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="fdb2-972e-1060-ab7e" name="CFAQ Commander" hidden="false" targetId="5396-45fa-2ec1-0516" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9984-1700-3a1b-768f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b680-8c21-fb42-ff4f" name="Commander" hidden="false" targetId="bee9-6a5a-eada-e330" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="905a-1a2e-f542-af40" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8a3b-3816-42d8-f9c1" name="Units" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="false"/>
+        <categoryLink id="cec0-07e9-6a6a-3290" name="Elite Units" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="a2d4-4fcd-125f-09b8" name="Tactical Marine" hidden="false" collective="false" import="true" type="model">
+      <infoGroups>
+        <infoGroup id="784e-c9d7-8dbc-c639" name="Abilities" hidden="false">
+          <profiles>
+            <profile id="12b3-e5e5-1b1c-e4c7" name="Coordinate Fire" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="af99-4428-db1f-7536" name="Marine" hidden="false" targetId="3c3a-6cf3-f791-e6fd" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ba01-b369-f726-a90d" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+        <categoryLink id="2fc6-e994-948c-0bc8" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="ed7d-490c-69af-efd1" name="Marine" hidden="false" targetId="1654-d469-f19d-c3e6" primary="false"/>
+        <categoryLink id="eed3-13a8-7070-0e3e" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="cfb5-1b71-52cb-2163" name="Supply Limit 5" hidden="false" targetId="25a5-e2df-b17a-851f" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="db7b-117c-d424-3fec" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8545-5b44-fb5a-293a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc62-3173-8e44-4748" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fe31-f86e-63a4-6758" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="b7e8-2b41-aa37-45b4" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
+                <infoLink id="5e24-3b44-f96b-2460" name="Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="a6d5-4b99-0b94-3ad4" name="DMR" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="902a-b4cc-c638-1f7b" name="Precision (DMR)" hidden="false" targetId="fc98-bb28-d077-75e7" type="rule"/>
+                <infoLink id="04d9-b12f-ea2c-4ff3" name="DMR" hidden="false" targetId="3d68-32a0-683e-65e5" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a76a-5071-a7b3-dd5b" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cac-1d73-351a-7491" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a81f-084e-df8c-08f8" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="049c-86ac-21d8-4795" name="Close-Quarters-Battle Marine" hidden="false" collective="false" import="true" type="model">
+      <infoGroups>
+        <infoGroup id="65e1-2359-9518-7282" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="d4d7-3da5-8089-8940" name="(A) Sprinting Fire" hidden="false" targetId="d5db-415d-2479-a6f6" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="c9c5-4415-cab3-edbc" name="Marine" hidden="false" targetId="3c3a-6cf3-f791-e6fd" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1bd3-e834-9a19-710e" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+        <categoryLink id="e133-01a0-0e85-ecf6" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="9426-5d34-a8ed-ced6" name="Marine" hidden="false" targetId="1654-d469-f19d-c3e6" primary="false"/>
+        <categoryLink id="e0d4-98eb-1703-9341" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="a3bb-1274-1818-ba5b" name="Supply Limit 3" hidden="false" targetId="4d0a-3a00-5238-450e" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7b16-285e-28db-4076" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="166b-9698-b033-b902" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04fa-f56e-e3df-57a4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5515-219b-e77d-5314" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="276f-47a4-8df8-c844" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
+                <infoLink id="6541-0f22-0c4a-7120" name="Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="7117-0f67-d3a3-2f7b" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="259b-2cab-9cbb-38ae" name="Shotgun" hidden="false" targetId="eb15-5c49-1e32-702c" type="profile"/>
+                <infoLink id="9d1e-ac0c-2e5c-5b19" name="Scatter (Shotgun)" hidden="false" targetId="8382-bb8a-189a-691d" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="8.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="89bb-08f3-0ef9-58c1" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c79-8825-2f10-de0f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a7d0-1139-943f-0764" name="Over Supply Limit (Shotgun)" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="12.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bf8b-5835-1252-be8d" name="Over Supply Limit (Assault Rifle)" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2e6e-87e0-2b1e-e23c" name="Captain Jacob Keyes" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a47c-6fbc-ef54-9b60" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e1f8-ea9d-a86f-b214" name="Captain Jacob Keyes" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D8</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D8</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D6</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">9</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="a869-7b74-8603-9bea" name="Commander Abilities" hidden="false">
+          <profiles>
+            <profile id="7a3f-0bc4-a73c-6699" name="High Value Target" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Should Jacob Keyes be slain, all enemy players get an additional Requisition point during the start phase of each turn for the rest of the game.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="4b9d-b4b1-6fb7-ea57" name="Inspirational UNSC Hero" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">As long as Jacob Keyes is on the board, once per round you may reroll a single Accuracy, Evasion, or Martial roll for a Human unit other than your Commander.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="b762-0514-7d49-7dce" name="Seasoned Commander" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">During the start phase of each round, gain a Seasoned Commander point. As long as Jacob Keyes is on the board, you may spend Seasoned Commander points instead of Requisitions points when issuing commands. These are only lost when spent.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="b923-664a-c89f-9ee6" name="Standing Orders" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Should Jacob Keyes be slain, you may still use all applicable commands from his command card below, however their Requisition cost is doubled in all cases, to a maximum of 8 Requisition.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2f94-90d9-4ee7-6936" name="Critical Mission Objective" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Double the supply limit on all non-character &apos;SPARTAN&apos; units.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+        <infoGroup id="50e3-15e5-3acd-4859" name="Abilities" hidden="false">
+          <profiles>
+            <profile id="37d6-cb76-d8cd-9cdd" name="Executive Command" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">When this unit activates in the combat phase, you may instead pick a unit within 6&quot; to make a free ranged attack instead of this unit activating.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="68fa-814b-0a81-3384" name="Opportunist" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">This unit may reroll attack dice for ranged attacks when targeting a unit that has already activated this phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="6ce2-2182-4073-a5d6" name="(W) Magnum" hidden="false" targetId="d725-8e79-8690-31c2" type="profile"/>
+        <infoLink id="f244-d3fc-ffb7-1f90" name="Sidearm (Magnum)" hidden="false" targetId="d84f-d71c-f82b-1035" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6633-afdf-665c-5ac7" name="New CategoryLink" hidden="false" targetId="bee9-6a5a-eada-e330" primary="true"/>
+        <categoryLink id="e0e7-814e-6ef3-cadd" name="Character" hidden="false" targetId="4836-44bc-4d98-b2de" primary="false"/>
+        <categoryLink id="9237-f6cf-1189-d15b" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="0b21-aeca-c1cb-f041" name="Officer" hidden="false" targetId="eada-6891-1cb2-76ff" primary="false"/>
+        <categoryLink id="7be0-9f94-8b03-37b4" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="74b0-5182-2d6f-1ec7" name="Medic Marine" hidden="false" collective="false" import="true" type="model">
+      <infoGroups>
+        <infoGroup id="2002-c74c-4678-ed11" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="e999-22ce-ab69-5d10" name="(A) Medical Treatment" hidden="false" targetId="c594-324e-021b-0899" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="d9d5-d37c-262d-43fd" name="Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
+        <infoLink id="1cec-b920-db58-77fa" name="Marine" hidden="false" targetId="3c3a-6cf3-f791-e6fd" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7423-d3ef-5f77-784f" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+        <categoryLink id="1081-8994-97fb-533e" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="72bd-1513-1b7e-5d25" name="Marine" hidden="false" targetId="1654-d469-f19d-c3e6" primary="false"/>
+        <categoryLink id="011b-c649-4d46-f88f" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="c357-80ab-67c5-047f" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cd20-ed9f-0587-8e19" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c88-9363-1fed-6f0e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c8d8-9265-401d-e629" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="376d-1d1a-019c-5f93" name="Recon Marine" hidden="false" collective="false" import="true" type="model">
+      <infoGroups>
+        <infoGroup id="8b46-3d92-aacf-0a4b" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="3f5b-aca7-f98e-ebab" name="(A) Steady Aim" hidden="false" targetId="470c-92ae-5bfd-e0a1" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="f2eb-0de4-c7a8-24dc" name="Critical Hit (Sniper Rifle)" hidden="false" targetId="225c-cc34-b817-6f56" type="rule"/>
+        <infoLink id="8600-d073-9b10-d534" name="Heavy Weapon (Sniper Rifle)" hidden="false" targetId="e662-bd81-cc8d-3368" type="rule"/>
+        <infoLink id="590c-8771-36a0-a927" name="Marine" hidden="false" targetId="3c3a-6cf3-f791-e6fd" type="profile"/>
+        <infoLink id="a1f6-57bb-56f4-1cfe" name="Sniper Rifle" hidden="false" targetId="deee-bff8-33df-58eb" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2ae2-0d3a-03d6-7a27" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+        <categoryLink id="9e90-b2e0-1a95-b592" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="c999-3021-0d3d-e350" name="Marine" hidden="false" targetId="1654-d469-f19d-c3e6" primary="false"/>
+        <categoryLink id="240c-d87e-e67b-016a" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="0dce-5ea6-bbe8-9dc0" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="02dc-cb3b-d615-ca13" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="092e-728c-4405-7e44" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="efbd-7b77-af22-90b1" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="48ce-bfc2-af93-0dfd" name="Marine Sergeant" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="e554-bda6-a7a3-652e" name="Marine Sergeant" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D6</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D6</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D6</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">8</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="bd98-bba7-6d79-b60d" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="a464-51e5-ee47-db36" name="(A) Campaign Veteran" hidden="false" targetId="543a-7df4-e422-9aff" type="profile"/>
+            <infoLink id="5ec7-b835-fb2c-046b" name="(A) Fireteam Leader" hidden="false" targetId="98c7-8d4a-f0f2-37e0" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="3b80-12ee-eca0-2028" name="Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6e55-36ce-4688-d8b3" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+        <categoryLink id="d19f-8a31-efcc-3345" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="07cc-a203-91a0-92e7" name="Marine" hidden="false" targetId="1654-d469-f19d-c3e6" primary="false"/>
+        <categoryLink id="598f-ebb6-3e04-b404" name="Sergeant" hidden="false" targetId="f118-9903-7f6e-9576" primary="false"/>
+        <categoryLink id="bef7-038b-93ba-7533" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="7ca0-4bc9-d1fc-4b65" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="16f1-8b71-f6c4-c151" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d60b-fc30-d4bc-314c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bd27-612f-bdb7-34ae" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2001-807f-1ae7-9fed" name="Heavy Gunner Marine" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="7bcf-8f4f-fe8e-351b" name="Marine Gunner" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">4&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D6</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D6</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D6</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">8</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="08fe-105e-6287-f9e1" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="0c3e-dfca-72ef-cc29" name="(A) Fortified Position" hidden="false" targetId="b90b-5511-28fa-d6c1" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="d249-2b8f-7685-e669" name="Fixed Weapon (HMG)" hidden="false" targetId="0e19-25cb-1ed0-5cc5" type="rule"/>
+        <infoLink id="7727-5de8-39b6-2507" name="HMG" hidden="false" targetId="0b94-35f6-3f67-8236" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="62bc-7641-04e8-123b" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+        <categoryLink id="9338-8f0a-5c36-7dd0" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="ca9a-5779-7901-61d1" name="Marine" hidden="false" targetId="1654-d469-f19d-c3e6" primary="false"/>
+        <categoryLink id="db46-cf23-d98c-b02c" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="15dc-5422-3c3b-85ad" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c240-34ba-b479-1361" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a85-5dae-d473-f23e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b535-0ae2-d345-7ca2" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="52b3-4059-f480-22ab" name="SPARTAN II" hidden="false" collective="false" import="true" type="model">
+      <infoGroups>
+        <infoGroup id="4868-a683-5949-120f" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="89e1-853d-faf8-df25" name="(A) Combat Initiative" hidden="false" targetId="538d-d05a-d7e5-4960" type="profile"/>
+            <infoLink id="7ed0-6871-374a-ddf0" name="(A) Sprinting Fire" hidden="false" targetId="d5db-415d-2479-a6f6" type="profile"/>
+            <infoLink id="b763-f30f-4844-b4d5" name="(A) Superhuman Reflexes" hidden="false" targetId="cee1-487a-dba6-2dd0" type="profile"/>
+            <infoLink id="6804-e7fc-74d0-798b" name="(A) Master of Any Weapon" hidden="false" targetId="0f69-23f0-abc4-5588" type="profile"/>
+            <infoLink id="971e-8c15-be3d-ead9" name="(A) Last Stand" hidden="false" targetId="9577-30c4-9a0f-1ba7" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="7e4c-df17-6289-8c85" name="(P) Spartan II" hidden="false" targetId="6cf8-8706-7cc3-800f" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6bb3-458c-a0d2-fe9d" name="New CategoryLink" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="true"/>
+        <categoryLink id="5849-7a24-58cc-70a1" name="SPARTAN" hidden="false" targetId="20e1-6c7a-3447-636b" primary="false"/>
+        <categoryLink id="2026-8629-a697-7e00" name="SPARTAN II" hidden="false" targetId="c994-be67-a873-4215" primary="false"/>
+        <categoryLink id="ad7f-da77-a750-7df5" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="1b85-856c-9c0c-ade6" name="Supply Limit 1" hidden="false" targetId="862d-41b5-21ec-3d9f" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="662b-be2a-31d3-3e76" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8436-3aff-52e9-4197" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3bf-aff9-4b83-f81a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9da5-07b6-8268-9526" name="Battle Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="65e9-63f3-ac1e-c4ce" name="BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
+                <infoLink id="404b-2f1e-81c8-d57d" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="18ac-e3b6-c9ec-9d1c" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="bf6b-880e-102c-b33e" name="Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
+                <infoLink id="30e6-7cac-437e-2496" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="e0d2-17ce-f156-39e8" name="DMR" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="019d-7470-3f5c-48bb" name="Precision (DMR)" hidden="false" targetId="fc98-bb28-d077-75e7" type="rule"/>
+                <infoLink id="8a36-c76e-9073-b02c" name="DMR" hidden="false" targetId="3d68-32a0-683e-65e5" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="88a7-ae04-35db-15ac" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="172c-bbb3-3307-6b97" name="Shotgun" hidden="false" targetId="eb15-5c49-1e32-702c" type="profile"/>
+                <infoLink id="779a-d6a1-2560-552b" name="Scatter (Shotgun)" hidden="false" targetId="8382-bb8a-189a-691d" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="dfc4-39d7-b97b-46c0" name="Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="23d3-46d9-7c33-2306" name="Sniper Rifle" hidden="false" targetId="deee-bff8-33df-58eb" type="profile"/>
+                <infoLink id="65a2-026e-546c-d0d2" name="Critical Hit (Sniper Rifle)" hidden="false" targetId="225c-cc34-b817-6f56" type="rule"/>
+                <infoLink id="afbd-511b-8e01-4b66" name="Heavy Weapon (Sniper Rifle)" hidden="false" targetId="e662-bd81-cc8d-3368" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0b85-bea9-5c37-6f0c" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9a8-adca-2ed9-a795" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="20c5-7910-cb57-54a1" name="Over Supply Limit (Any Other Weapon)" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f83c-4e41-bb23-8042" name="Over Supply Limit (Sniper Rifle)" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="40.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="120.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f8bd-9b0a-0bf7-4e13" name="ODST Vanguard" hidden="false" collective="false" import="true" type="model">
+      <infoGroups>
+        <infoGroup id="4fad-a290-b357-493c" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="a046-2e98-1fbf-0608" name="(A) VISR" hidden="false" targetId="8054-e7c8-d701-aac2" type="profile"/>
+            <infoLink id="abc4-a86d-4113-f4d6" name="(A) Strategic Position" hidden="false" targetId="6b67-592f-f425-7eff" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="357c-a9a3-c74c-aae3" name="(P) ODST" hidden="false" targetId="c116-3d82-c362-e659" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4fe5-f24e-eade-678c" name="New CategoryLink" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="true"/>
+        <categoryLink id="323c-2359-d9d7-232b" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="fb57-a3e4-e468-f2b7" name="ODST" hidden="false" targetId="f69b-28bf-66a5-39a9" primary="false"/>
+        <categoryLink id="7f23-28e9-9b4b-3150" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="790d-c6a3-7215-aa35" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bfb7-777d-5120-3808" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="908b-3123-03b9-2019" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9ae7-63f1-f2cd-024d" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2e47-220a-e68c-c970" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad56-491f-cac8-0912" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0de2-6bad-462c-63f9" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f71c-d318-7370-41ed" name="DMR" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="31b2-dd98-a50b-6d22" name="(W) DMR" hidden="false" targetId="3d68-32a0-683e-65e5" type="profile"/>
+                <infoLink id="4544-c93a-ad0e-9625" name="Precision (DMR)" hidden="false" targetId="fc98-bb28-d077-75e7" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="0765-d658-20a7-5ebc" name="Battle Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="fd47-9716-c8a9-a65a" name="(W) BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
+                <infoLink id="c095-8586-5616-7f9d" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="a80b-d6ef-44af-b20e" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="2406-5fbd-86b7-c854" name="(W) Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
+                <infoLink id="6819-c566-a968-ab7b" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="b8b5-4269-9a99-5927" name="M7S SMG" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="6346-460d-e574-3114" name="M7S" hidden="false" targetId="2c09-70e4-fb3e-d927" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="61f6-fbe3-381e-4f34" name="ODST Bullfrog" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="5177-91e0-2623-d716" name="ODST Bullfrog" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">12&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D8</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D8</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D8</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">8</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="de84-bad0-02ff-711a" name="(A) Flight" hidden="false" targetId="4765-c33e-c411-caa7" type="profile"/>
+        <infoLink id="882f-f728-0977-7dc2" name="(A) VISR" hidden="false" targetId="8054-e7c8-d701-aac2" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c4b3-6d4a-a634-a16d" name="New CategoryLink" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="true"/>
+        <categoryLink id="1b6e-040f-50ce-f007" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="bafb-7f2b-d33e-1c08" name="ODST" hidden="false" targetId="f69b-28bf-66a5-39a9" primary="false"/>
+        <categoryLink id="e05d-188d-885c-5b66" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="3065-e733-09a1-2192" name="Supply Limit 1" hidden="false" targetId="862d-41b5-21ec-3d9f" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7a17-0129-9566-2044" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e04f-88c2-ddae-ba43" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c352-3bf3-2458-fa98" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0fb7-4268-4b76-e95c" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6285-24dc-e46f-e680" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60e6-64fb-00f0-af17" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b5c5-99ed-af42-ec8c" name="DMR" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="dcc9-718b-1697-2ca8" name="(W) DMR" hidden="false" targetId="3d68-32a0-683e-65e5" type="profile"/>
+                <infoLink id="3f3d-2d92-bce9-2299" name="Precision (DMR)" hidden="false" targetId="fc98-bb28-d077-75e7" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="4c18-df82-1cc4-7429" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="b38f-67bd-56e1-d211" name="Scatter (Shotgun)" hidden="false" targetId="8382-bb8a-189a-691d" type="rule"/>
+                <infoLink id="bf9d-e3ba-9bf8-d26e" name="(W) Shotgun" hidden="false" targetId="eb15-5c49-1e32-702c" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3e6e-4f70-0d69-2f9d" name="SPARTAN III in Mjolnir Armor" hidden="false" collective="false" import="true" type="model">
+      <infoGroups>
+        <infoGroup id="2eb9-badc-a1d8-f408" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="3aed-bdc9-d3c7-f9c1" name="(A) Sprinting Fire" hidden="false" targetId="d5db-415d-2479-a6f6" type="profile"/>
+            <infoLink id="76bf-d8f1-d5c6-763a" name="(A) Superhuman Reflexes" hidden="false" targetId="cee1-487a-dba6-2dd0" type="profile"/>
+            <infoLink id="f6b9-3446-6cd4-4f18" name="(A) Last Stand" hidden="false" targetId="9577-30c4-9a0f-1ba7" type="profile"/>
+            <infoLink id="8cfc-0542-15a0-5b8a" name="(A) Assassinate" hidden="false" targetId="c42e-bab1-7652-24dc" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="1def-153f-1455-6364" name="(P) Spartan III" hidden="false" targetId="9168-3363-e08d-e68c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="24e0-543c-2f34-d850" name="New CategoryLink" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="true"/>
+        <categoryLink id="5ff2-216e-f127-9258" name="SPARTAN" hidden="false" targetId="20e1-6c7a-3447-636b" primary="false"/>
+        <categoryLink id="feba-f7bb-4ee6-150e" name="SPARTAN III" hidden="false" targetId="e022-b488-840c-894f" primary="false"/>
+        <categoryLink id="9fa6-4517-98f5-834b" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+        <categoryLink id="12a9-ee31-2d1b-80a6" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="95e0-96c5-2264-fdcf" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="799e-97f6-1c14-502c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fa8-b928-0390-2a84" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="180d-5ab2-d897-477d" name="Battle Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="f4b7-dd0a-cb96-d12b" name="BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
+                <infoLink id="b1fe-9917-9075-de57" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="d906-144c-1820-df6a" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="9a09-d656-7b4a-48f4" name="Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
+                <infoLink id="483b-6b90-dd72-d22f" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="4494-aae0-e0c8-f2cc" name="DMR" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="6fe3-0557-6c03-75a8" name="Precision (DMR)" hidden="false" targetId="fc98-bb28-d077-75e7" type="rule"/>
+                <infoLink id="f276-dc69-574f-c124" name="(W) DMR" hidden="false" targetId="3d68-32a0-683e-65e5" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="9f53-def8-7eb1-32ef" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="1e0f-a7ce-73ce-af9a" name="(W) Shotgun" hidden="false" targetId="eb15-5c49-1e32-702c" type="profile"/>
+                <infoLink id="77a9-1815-e836-66fd" name="Scatter (Shotgun)" hidden="false" targetId="8382-bb8a-189a-691d" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="7406-9fca-111b-295b" name="Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="2db9-2bab-efa8-5eb8" name="Sniper Rifle" hidden="false" targetId="deee-bff8-33df-58eb" type="profile"/>
+                <infoLink id="5c0b-3d87-2243-65e7" name="Critical Hit (Sniper Rifle)" hidden="false" targetId="225c-cc34-b817-6f56" type="rule"/>
+                <infoLink id="7efa-a7e8-cd2d-7c2b" name="Heavy Weapon (Sniper Rifle)" hidden="false" targetId="e662-bd81-cc8d-3368" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="795a-0281-3897-3cb1" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51af-985c-0132-b938" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="15d7-d54f-8359-56ef" name="Over Supply Limit (Any Other Weapon)" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f7e1-0439-71c7-3461" name="Over Supply Limit (Sniper Rifle)" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="40.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="90.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="07d2-4c29-a51d-4c55" name="SPARTAN III in Semi-Powered Infiltration Armor" hidden="false" collective="false" import="true" type="model">
+      <infoGroups>
+        <infoGroup id="6123-bd4c-8a2d-0b6b" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="3ec4-6301-d69f-9b06" name="(A) Sprinting Fire" hidden="false" targetId="d5db-415d-2479-a6f6" type="profile"/>
+            <infoLink id="eac3-17ce-c1d0-6ca5" name="(A) Superhuman Reflexes" hidden="false" targetId="cee1-487a-dba6-2dd0" type="profile"/>
+            <infoLink id="e2b6-3ca0-088b-66a8" name="(A) Last Stand" hidden="false" targetId="9577-30c4-9a0f-1ba7" type="profile"/>
+            <infoLink id="afb1-3b39-dbc7-c93a" name="(A) Assassinate" hidden="false" targetId="c42e-bab1-7652-24dc" type="profile"/>
+            <infoLink id="e3a5-5a12-20b3-7879" name="(A) Active Camouflage" hidden="false" targetId="1737-6030-c00e-9056" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="41fe-0014-6a61-4f58" name="(P) Spartan III SPI" hidden="false" targetId="7928-9b14-7136-b0e9" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8170-3d6e-7836-538f" name="New CategoryLink" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="true"/>
+        <categoryLink id="ae87-53aa-0a8f-517c" name="New CategoryLink" hidden="false" targetId="20e1-6c7a-3447-636b" primary="false"/>
+        <categoryLink id="7f23-9500-cad9-5b5a" name="SPARTAN III" hidden="false" targetId="e022-b488-840c-894f" primary="false"/>
+        <categoryLink id="ed6d-5bad-e9ef-addc" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+        <categoryLink id="7c4f-ead7-35b5-9cf7" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a954-0c24-4fd8-870d" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e49-f015-46a0-697b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb58-21f2-a71d-167f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2804-cf57-ef36-dce9" name="Battle Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="7449-4cee-deae-41e0" name="BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
+                <infoLink id="c3df-5e5e-fe42-bb5f" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="f534-565d-3c64-e969" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="9de0-fb57-e202-19da" name="Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
+                <infoLink id="b45d-22e0-b4c0-ff53" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="f866-7cc7-8f5f-3460" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="8359-9f40-d3c6-cd8e" name="(W) Shotgun" hidden="false" targetId="eb15-5c49-1e32-702c" type="profile"/>
+                <infoLink id="0d17-e137-f95f-db30" name="Scatter (Shotgun)" hidden="false" targetId="8382-bb8a-189a-691d" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="67dc-f1bd-7801-8258" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d413-d5f0-f31c-d1cd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f652-5655-b13d-c45b" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="90.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7eab-a690-f254-1573" name="ODST Strike-Team Leader" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="b00a-801a-f2e9-e239" name="ODST Strike-Team Leader" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D8</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D8</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D8</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">9</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="91c2-c7b2-b801-8c40" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="0a38-98ef-062b-1f36" name="(A) VISR" hidden="false" targetId="8054-e7c8-d701-aac2" type="profile"/>
+            <infoLink id="c554-5219-3ad3-53d1" name="(A) Tip of the Spear" hidden="false" targetId="1eb8-bee1-c79e-eb3e" type="profile"/>
+            <infoLink id="95b5-45d3-68f6-1984" name="(A) Target Allocation" hidden="false" targetId="c7a9-34c2-9677-ab09" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="8730-50e6-73f0-1ca5" name="New CategoryLink" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="true"/>
+        <categoryLink id="a2ba-8484-11e8-cf0a" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="e2bc-6fe3-7df2-3766" name="ODST" hidden="false" targetId="f69b-28bf-66a5-39a9" primary="false"/>
+        <categoryLink id="8da5-ba43-b2d9-8934" name="Supply Limit 1" hidden="false" targetId="862d-41b5-21ec-3d9f" primary="false"/>
+        <categoryLink id="63d8-d81a-7d63-5772" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9802-a564-9736-d3c5" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a09d-1ba3-c6f6-ffd7" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5642-a178-dfd4-9ad0" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="30.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e44c-43c8-bca8-c66b" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02cc-3ec2-7cb8-1542" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6980-4397-7aed-6bcc" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d5a6-50a2-817a-b0c1" name="Battle Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="d8fe-923d-782d-a14d" name="(W) BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
+                <infoLink id="857a-5fa8-fcd3-e749" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="31af-8634-07eb-63fe" name="M7S SMG" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="959e-5929-7d45-4156" name="M7S" hidden="false" targetId="2c09-70e4-fb3e-d927" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="60.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b0cf-94a1-acd7-8020" name="Sergeant Avery Johnson" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5afa-87c1-11da-8981" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="daeb-f577-6aba-e26e" name="Sergeant Avery Johnson" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D10</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D8</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D10</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">10</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R, x1 B</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="c7e9-7c05-1381-ed5e" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="2c91-5b27-62a7-f934" name="(A) Assault" hidden="false" targetId="0c0c-6aa7-0553-038d" type="profile"/>
+            <infoLink id="4eee-7efa-a0b9-9ed3" name="(A) Combat Initiative" hidden="false" targetId="538d-d05a-d7e5-4960" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="1722-c3cd-198c-2ca5" name="Commander Abilities" hidden="false">
+          <profiles>
+            <profile id="e2f7-259f-8092-d605" name="Veteran Sergeant" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Increase the supply limit of all non-character Marine units by 3.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c4ca-2475-6962-3dbe" name="Squad Deployment" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">During the deployment phase, whenever you place a Marine unit on the board, you may immediately place an additional Marine unit from your undeployed units within 3&quot; of it. This deployment does not incur an additional squad deployment from this effect.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="636e-96cd-fe6c-312c" name="Squad Tactics" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">When you issue a basic command (marked on the command card with a green circle) to a &apos;Marine Sergeant&apos;, you may also apply that same command for free to all other Marine units within 6&quot;, so long as they are applicable targets.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="608a-c6b3-48d3-930d" name="Pelican Dropzone" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Up to 25% of your units may be held in reserves and not deployed during setup. At the end of any action phase, you may pick a point anywhere on the board that is not within PB (6&quot;) range of an enemy unit. Deploy all of these reserved units within 3&quot; of this point; they may not activate in this action phase and count as having moved in the following combat phase.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="257f-b228-e344-dc07" name="Chain of Command" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Should Avery Johnson be slain, you may still issue a basic command (marked on the command card with a green circle) so long as you still have at least 1 &apos;Marine Sergeant&apos; unit on the board.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="e9ac-d914-2f37-202f" name="(W) BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
+        <infoLink id="c856-063e-02cc-f57d" name="(W) Shotgun" hidden="false" targetId="eb15-5c49-1e32-702c" type="profile"/>
+        <infoLink id="d4c2-a35e-c6b3-87cc" name="Scatter (Shotgun)" hidden="false" targetId="8382-bb8a-189a-691d" type="rule"/>
+        <infoLink id="0f00-ebc7-70e6-42ed" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2c1e-5d0b-fde8-743a" name="New CategoryLink" hidden="false" targetId="4836-44bc-4d98-b2de" primary="false"/>
+        <categoryLink id="dfd2-c5dd-848e-99d6" name="New CategoryLink" hidden="false" targetId="bee9-6a5a-eada-e330" primary="true"/>
+        <categoryLink id="91f8-77a4-cbd9-f677" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="15d6-9a10-77ee-0b71" name="Marine" hidden="false" targetId="1654-d469-f19d-c3e6" primary="false"/>
+        <categoryLink id="a086-d4e1-0bc0-d41f" name="Veteran" hidden="false" targetId="0253-e074-481c-004c" primary="false"/>
+        <categoryLink id="0a77-5e50-d875-85e1" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ef77-4ab6-e43d-aaa1" name="Carter-A259" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a898-b38a-47dd-4d5f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="fca5-d110-413c-c17a" name="Carter-A259" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">7&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D12</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D10</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D10</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">13</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">4</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R, x1 B</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="b988-a65e-3b66-65e5" name="Abilities" hidden="false">
+          <profiles>
+            <profile id="4cc3-d6b7-e512-b217" name="That Lone Wolf Stuff Stays Behind" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Friendly units may reroll attack dice for attacks targeting a unit that has dealt damage to this unit in the battle round.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="d24e-1a86-9121-8c7f" name="I&apos;ve Got The Mass" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">As per Last Stand, this unit may make a single melee or ranged attack after it is slain, but before it is removed from the board. If this is a melee attack, the melee damage profile is changed to x1 R, x1 W. If this is a ranged attack, it gains a +1 modifier to its Accuracy.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="136f-3711-2ddc-48d4" name="(A) Sprinting Fire" hidden="false" targetId="d5db-415d-2479-a6f6" type="profile"/>
+            <infoLink id="8ac0-c75a-bcbc-fa2f" name="(A) Superhuman Reflexes" hidden="false" targetId="cee1-487a-dba6-2dd0" type="profile"/>
+            <infoLink id="c5d2-f51f-a86a-ac50" name="(A) Assassinate" hidden="false" targetId="c42e-bab1-7652-24dc" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="d680-a823-ace4-16d7" name="Commander Abilities" hidden="false">
+          <profiles>
+            <profile id="b63c-f71d-3eed-947f" name="Colonel Holland Will Be Briefed" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Add 1 to the supply limit of all &apos;SPARTAN III&apos; units.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="35c7-e8cd-cd2e-07fe" name="We&apos;ve Been Engaged!" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">After deployment, but before the first battle round has begun, you may remove up to two ‘SPARTAN’ units from play (including this unit) and redeploy them anywhere inside your deployment zone.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="5ed9-e967-6aef-00f0" name="You&apos;re On Your Own, Noble" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">If this unit is slain, all ‘SPARTAN’ units suffer a -1 modifier to Evasion rolls for the rest of the battle round.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="a767-1f48-53e6-ef34" name="Give Those Troopers a Hand" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Any ‘Marine’ unit within 3” of this unit may increase their Accuracy to D8.
+</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="0bdd-b6cd-c9da-88cd" name="Winter Contingency" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">SPARTAN III units within 3” may reroll a single damage die when making attacks against Elite units.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="f8d6-9781-ee3d-61ff" name="Field Promotion" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">If Carter is slain, as long as you have a SPARTAN III unit on the board, you can still use all of his commands; however, the price for these is doubled.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="5c95-4286-57c9-2b8b" name="(W) DMR" hidden="false" targetId="3d68-32a0-683e-65e5" type="profile"/>
+        <infoLink id="1768-4cbb-4d20-4c7f" name="Precision (DMR)" hidden="false" targetId="fc98-bb28-d077-75e7" type="rule"/>
+        <infoLink id="28a7-1304-4b97-8f3c" name="(W) Magnum" hidden="false" targetId="d725-8e79-8690-31c2" type="profile"/>
+        <infoLink id="1d50-c2f8-07a5-b161" name="Sidearm (Magnum)" hidden="false" targetId="d84f-d71c-f82b-1035" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="006c-1661-741a-6390" name="New CategoryLink" hidden="false" targetId="5396-45fa-2ec1-0516" primary="true"/>
+        <categoryLink id="1b6e-a247-7efc-f5d4" name="Character" hidden="false" targetId="4836-44bc-4d98-b2de" primary="false"/>
+        <categoryLink id="6fa9-d95e-184b-b557" name="SPARTAN" hidden="false" targetId="20e1-6c7a-3447-636b" primary="false"/>
+        <categoryLink id="73f6-981e-2ca4-5419" name="SPARTAN III" hidden="false" targetId="e022-b488-840c-894f" primary="false"/>
+        <categoryLink id="5d4f-35c0-e900-0220" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

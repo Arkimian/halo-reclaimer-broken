@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="6969-e28d-0b13-7d8a" name="Covenant" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="8913-c2d7-6830-9155" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="cbc5-95ad-3261-53b3" name="Covenant" hidden="false"/>
+    <categoryEntry id="4f4d-9b88-a239-2cc5" name="Character" hidden="false"/>
+    <categoryEntry id="f68e-47cd-891e-6f9b" name="Elite" hidden="false"/>
+    <categoryEntry id="999f-c644-6783-4d96" name="Jackal" hidden="false"/>
+    <categoryEntry id="a379-d075-75c7-491e" name="Grunt" hidden="false"/>
+    <categoryEntry id="9004-2ed8-5523-44fb" name="Brute" hidden="false"/>
+    <categoryEntry id="9b25-bc71-958f-3fbd" name="Special Operations" hidden="false"/>
+    <categoryEntry id="131a-99b8-518a-7ec1" name="Ultra" hidden="false"/>
+    <categoryEntry id="0df7-a746-9fc0-d263" name="Zealot" hidden="false"/>
+    <categoryEntry id="1d29-4099-e6cf-cea0" name="Skirmisher" hidden="false"/>
+    <categoryEntry id="9b03-d6ec-2b8b-f5cd" name="Warrior" hidden="false"/>
+    <categoryEntry id="31e0-c2b8-13ea-9f9d" name="Murmillo" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="550f-dbfc-0237-1bc7" name="Hunter Cadre" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d19-1997-0182-9afb" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3f3a-9080-bd91-966d" name="CFAQ Commander" hidden="false" targetId="5396-45fa-2ec1-0516" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7782-07db-bdbf-128c" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4315-ee2c-fea5-a2ed" name="Commander" hidden="false" targetId="bee9-6a5a-eada-e330" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdfb-8e62-eec1-412e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="381e-e252-13df-50e7" name="Units" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="false"/>
+        <categoryLink id="073e-a193-9b16-3d8a" name="Elite Units" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="b9c5-5db6-11df-e233" name="Sangheili Minor" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="1905-c3fd-b7b3-8c99" name="Sangheili Minor" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D8</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D8</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D8</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">8</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">2</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R x1 W</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="82e8-aa23-1396-db93" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="9ae9-4428-5990-dd6d" name="(A) Advanced Shields" hidden="false" targetId="9c2f-e27b-1c94-10ac" type="profile"/>
+            <infoLink id="1c72-4e30-082a-2213" name="(A) Honourable Combat" hidden="false" targetId="aa0a-175a-cafa-b630" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="b489-e2d0-a120-a3c0" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="ecdb-eab7-e340-9aa7" name="Elite" hidden="false" targetId="f68e-47cd-891e-6f9b" primary="false"/>
+        <categoryLink id="1acf-b829-f315-ad37" name="Units" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+        <categoryLink id="c6e9-2e72-b917-0db5" name="Warrior" hidden="false" targetId="9b03-d6ec-2b8b-f5cd" primary="false"/>
+        <categoryLink id="7ee7-755a-5a36-4590" name="Supply Limit 3" hidden="false" targetId="4d0a-3a00-5238-450e" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="09be-a4b9-ddad-af53" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7518-84ec-5f81-86cd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fa9c-2001-4c97-1e77" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a09c-7b5a-c45f-a7ae" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf27-b183-cb2e-4999" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8221-1fbf-3b97-0a3d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ad0d-14aa-2b66-4ca1" name="Plasma Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="ac2e-7d8a-10bf-c30f" name="(W) Plasma Rifle" hidden="false" targetId="4bab-e5e1-bb6b-017c" type="profile"/>
+                <infoLink id="b44d-c067-3edd-873f" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7906-6184-3fc2-ff0a" name="Needler" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="7313-75c2-6c38-cf96" name="(W) Needler" hidden="false" targetId="3a71-9d08-479c-2f6a" type="profile"/>
+                <infoLink id="3314-e2ed-4ddf-e592" name="Self-Guided (Needler)" hidden="false" targetId="7c1f-2f47-945d-c796" type="rule"/>
+                <infoLink id="6a48-99a9-d6e9-802f" name="Supercombine (Needle Weapons)" hidden="false" targetId="38cd-2aa0-911f-0492" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3852-eaef-0e31-5d3e" name="Covenant Carbine" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="5e41-d702-007d-b42c" name="(W) Covenant Carbine" hidden="false" targetId="970f-cea2-8621-74e2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1026-7036-a78c-2039" name="Sangheili Major" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="ea4e-8429-8a74-ca63" name="Sangheili Major" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D8</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D8</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D8</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">9</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">3</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R x1 W</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="1103-4a7f-80f4-f04d" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="ed75-2256-9f2d-83d3" name="(A) Advanced Shields" hidden="false" targetId="9c2f-e27b-1c94-10ac" type="profile"/>
+            <infoLink id="5f7d-004b-50a5-9b38" name="(A) Honourable Combat" hidden="false" targetId="aa0a-175a-cafa-b630" type="profile"/>
+            <infoLink id="b259-0a5f-fbd0-ec92" name="(A) Fury of Sangheilios" hidden="false" targetId="daf2-55e6-17f2-b148" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="f5bf-eb42-bda8-b23e" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="e239-aa9d-97ae-844f" name="Elite" hidden="false" targetId="f68e-47cd-891e-6f9b" primary="false"/>
+        <categoryLink id="0f95-59c3-7b76-914e" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+        <categoryLink id="9e30-288d-f408-e787" name="Warrior" hidden="false" targetId="9b03-d6ec-2b8b-f5cd" primary="false"/>
+        <categoryLink id="ba58-d172-5f23-bcc4" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="369d-6f46-2b69-b2e0" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1496-0678-1f30-5d6e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="77bd-5d4d-1ae3-30dd" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2cba-1351-683a-3f64" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3981-db92-622b-23bd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fec2-0e7e-467f-a015" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="49f3-c384-c518-1f8f" name="Covenant Carbine" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="98ef-b4e0-89f2-2e6b" name="(W) Covenant Carbine" hidden="false" targetId="970f-cea2-8621-74e2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9ee9-6968-897c-354b" name="Plasma Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="9607-9c37-4b8e-72e2" name="(W) Plasma Rifle" hidden="false" targetId="4bab-e5e1-bb6b-017c" type="profile"/>
+                <infoLink id="b0cd-127e-39f9-de95" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a6ea-e2f0-89a4-1831" name="Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="791d-6ca0-abd5-c931" name="(W) Energy Sword" hidden="false" targetId="bee8-481d-e5d6-bff5" type="profile"/>
+                <infoLink id="28ca-10b4-34b7-f333" name="Melee Weapon (Any Melee Weapon)" hidden="false" targetId="885a-dab6-3fe2-2322" type="rule"/>
+                <infoLink id="0c36-a383-ccd7-7715" name="(A) Parry" hidden="false" targetId="211e-91fe-ddd5-ccfe" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6f47-f34f-f66e-8868" name="Unggoy Major" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="e1fa-9776-7903-0697" name="Unggoy Major" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">5&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D4</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D4</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D4</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">6</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 B</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="63b5-dcb3-613f-6d34" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="61d7-3bd1-429d-ff09" name="(A) Craven" hidden="false" targetId="0d62-f660-4c7e-7e5a" type="profile"/>
+            <infoLink id="d5a0-b5b0-13ca-14c8" name="(A) Talent For Survival" hidden="false" targetId="d050-4946-58f2-2bd5" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="40aa-588f-368d-43c9" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="9cd8-13fd-1992-8b21" name="Grunt" hidden="false" targetId="a379-d075-75c7-491e" primary="false"/>
+        <categoryLink id="a9db-b90c-5ccc-8fcd" name="Warrior" hidden="false" targetId="9b03-d6ec-2b8b-f5cd" primary="false"/>
+        <categoryLink id="057a-cfff-6abd-c62a" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+        <categoryLink id="d146-2887-b5f9-315f" name="Supply Limit 3" hidden="false" targetId="4d0a-3a00-5238-450e" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e68e-7332-abec-7e04" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffc6-e84a-f91d-eebd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dcd8-39ec-26f1-af54" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="778e-1995-801a-e7c5" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1275-136e-df72-0f80" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9be4-0e65-f731-385d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c601-421e-5b7b-ae03" name="Plasma Pistol" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="f54d-074c-595d-9398" name="(W) Plasma Pistol" hidden="false" targetId="66d6-2ff3-c313-6ca0" type="profile"/>
+                <infoLink id="332a-5864-64fc-258a" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+                <infoLink id="8861-c1eb-a55e-b945" name="Charged Shot (Plasma Pistol)" hidden="false" targetId="7c99-db0a-2527-9263" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="49c3-90cb-6883-2c6c" name="Needler" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="963a-f989-926d-eb81" name="(W) Needler" hidden="false" targetId="3a71-9d08-479c-2f6a" type="profile"/>
+                <infoLink id="27db-e3a2-45ad-5e39" name="Self-Guided (Needler)" hidden="false" targetId="7c1f-2f47-945d-c796" type="rule"/>
+                <infoLink id="477d-8bd8-7c1f-1676" name="Supercombine (Needle Weapons)" hidden="false" targetId="38cd-2aa0-911f-0492" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3fe2-6522-0fe6-d175" name="Unggoy Minor" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="d839-8e43-f4ae-5b59" name="Unggoy Minor" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">5&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D4</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D4</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D4</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">5</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 B</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="5589-885f-3f7d-89e0" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="ba4f-35a1-0965-0cd3" name="(A) Craven" hidden="false" targetId="0d62-f660-4c7e-7e5a" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="8a6d-a4a5-f01e-5db9" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="6bc8-1711-5565-610c" name="Grunt" hidden="false" targetId="a379-d075-75c7-491e" primary="false"/>
+        <categoryLink id="853f-fd9e-ba90-6e53" name="Supply Limit 5" hidden="false" targetId="25a5-e2df-b17a-851f" primary="false"/>
+        <categoryLink id="f7e7-48a3-7044-c076" name="Warrior" hidden="false" targetId="9b03-d6ec-2b8b-f5cd" primary="false"/>
+        <categoryLink id="f74c-1a1a-d59d-9fcf" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="691b-167c-8d96-56b2" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3686-b38a-438c-5136" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4334-1a97-5223-9ec0" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="39d5-962e-4967-70a0" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e8e-5cb7-7391-825f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf2e-99a3-01d9-86f5" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a0da-5093-0e5c-87d1" name="Plasma Pistol" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="9f11-8078-93a8-7037" name="(W) Plasma Pistol" hidden="false" targetId="66d6-2ff3-c313-6ca0" type="profile"/>
+                <infoLink id="d037-63c1-7834-f680" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+                <infoLink id="9571-dcec-d1fa-764f" name="Charged Shot (Plasma Pistol)" hidden="false" targetId="7c99-db0a-2527-9263" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c5c8-cff6-373b-b039" name="Needler" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="9429-1017-d303-6dd8" name="(W) Needler" hidden="false" targetId="3a71-9d08-479c-2f6a" type="profile"/>
+                <infoLink id="5510-9196-b0a8-ba06" name="Self-Guided (Needler)" hidden="false" targetId="7c1f-2f47-945d-c796" type="rule"/>
+                <infoLink id="e77a-1802-57c6-456f" name="Supercombine (Needle Weapons)" hidden="false" targetId="38cd-2aa0-911f-0492" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="83f5-06ef-c3a3-2e78" name="Kig-Yar Minor" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="28fd-3387-732b-7b49" name="Kig-Yar Minor" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D6</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D6</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D6</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">5</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">2*</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 W</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="5a22-4a81-c280-0477" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="d34b-cb60-3770-c49a" name="(A) Point Defence Gauntlet" hidden="false" targetId="2831-9b3b-6fce-3af4" type="profile"/>
+            <infoLink id="8dda-2c35-aeb6-8154" name="(A) Carnivore" hidden="false" targetId="1e77-6f24-975d-a693" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="31dd-f5e1-f3e7-ad82" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="a2b7-5fd9-fb9e-a65e" name="Jackal" hidden="false" targetId="999f-c644-6783-4d96" primary="false"/>
+        <categoryLink id="229f-b434-e106-ae89" name="Supply Limit 4" hidden="false" targetId="b1c9-6623-86c8-3624" primary="false"/>
+        <categoryLink id="93f1-e9bd-c6b3-764d" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+        <categoryLink id="3343-87a4-0117-5f97" name="Warrior" hidden="false" targetId="9b03-d6ec-2b8b-f5cd" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bbaf-d4ac-0e85-d4d5" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8fb-04ad-14ef-c7b4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6c91-c02d-16b8-9d04" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="62f5-45c9-1be2-9f35" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3be2-a03c-3a79-00fb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0461-b3c9-273a-bfaa" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8671-9b64-8feb-f8c0" name="Plasma Pistol" page="" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="aafa-539f-6c06-efd0" name="(W) Plasma Pistol" hidden="false" targetId="66d6-2ff3-c313-6ca0" type="profile"/>
+                <infoLink id="b491-373c-f01f-f3bb" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+                <infoLink id="92d9-fa18-d8fd-97ae" name="Charged Shot (Plasma Pistol)" hidden="false" targetId="7c99-db0a-2527-9263" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4633-e360-d5e5-7592" name="Needler" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="97cb-7b19-c7f0-fb50" name="(W) Needler" hidden="false" targetId="3a71-9d08-479c-2f6a" type="profile"/>
+                <infoLink id="779f-48fb-c296-3d60" name="Supercombine (Needle Weapons)" hidden="false" targetId="38cd-2aa0-911f-0492" type="rule"/>
+                <infoLink id="9892-8f03-70af-6d07" name="Self-Guided (Needler)" hidden="false" targetId="7c1f-2f47-945d-c796" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d42f-4889-7235-f5eb" name="Kig-Yar Major" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="77ec-af49-3633-d2c9" name="Kig-Yar Major" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D6</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D6</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D4</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">6</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">3*</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 W</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="6b56-9ef9-8b77-f086" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="3ff9-c600-9c34-d590" name="(A) Point Defence Gauntlet" hidden="false" targetId="2831-9b3b-6fce-3af4" type="profile"/>
+            <infoLink id="ea9d-2228-c1fb-666e" name="(A) Carnivore" hidden="false" targetId="1e77-6f24-975d-a693" type="profile"/>
+            <infoLink id="1cd7-32da-8c07-cd35" name="(A) Shield Wall" hidden="false" targetId="2293-eae6-8ea6-a53a" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="7d9a-2434-1ff4-540f" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="77e1-f860-78af-57c2" name="Jackal" hidden="false" targetId="999f-c644-6783-4d96" primary="false"/>
+        <categoryLink id="14b9-a449-6fbe-b524" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+        <categoryLink id="6c77-09f0-45d9-32d5" name="Units" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+        <categoryLink id="9272-5b3c-d3c2-34a9" name="Warrior" hidden="false" targetId="9b03-d6ec-2b8b-f5cd" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="90b0-0390-049b-5a5b" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e04-c3ae-48af-0c65" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c916-f697-8f2b-8ded" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2b48-55c9-dc61-ea25" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f9a-5288-7400-a988" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71b6-d9af-f222-8335" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ea2a-7272-8baa-5c9b" name="Plasma Pistol" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="f2ab-0600-9d69-15a0" name="Charged Shot (Plasma Pistol)" hidden="false" targetId="7c99-db0a-2527-9263" type="rule"/>
+                <infoLink id="4f45-9d60-c262-dfa7" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+                <infoLink id="fca7-bf9c-786b-e4e2" name="(W) Plasma Pistol" hidden="false" targetId="66d6-2ff3-c313-6ca0" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7050-e60d-6b4c-9428" name="Needler" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="0bf8-3c59-17e8-0f22" name="Self-Guided (Needler)" hidden="false" targetId="7c1f-2f47-945d-c796" type="rule"/>
+                <infoLink id="a0cf-285b-3388-f629" name="Supercombine (Needle Weapons)" hidden="false" targetId="38cd-2aa0-911f-0492" type="rule"/>
+                <infoLink id="dc00-a44d-91ad-32b3" name="(W) Needler" hidden="false" targetId="3a71-9d08-479c-2f6a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ed8e-763a-bdba-3cd7" name="Kig-Yar Marksman" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="d24c-845b-768c-74f2" name="Kig-Yar Marksman" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D8</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D6</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D4</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">5</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 W</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="2cbc-5c02-6b4b-1d2d" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="e02c-5bed-705b-7a1a" name="(A) Carnivore" hidden="false" targetId="1e77-6f24-975d-a693" type="profile"/>
+            <infoLink id="e05d-50a6-bc8b-90e7" name="(A) Strategic Position / Low Profile" hidden="false" targetId="6b67-592f-f425-7eff" type="profile"/>
+            <infoLink id="f230-d9f8-8948-4ab6" name="(A) Farsight" hidden="false" targetId="96b3-ab9e-4e5b-40a7" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="aea4-bc76-9848-5f73" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="cea8-7e53-e960-cf45" name="Jackal" hidden="false" targetId="999f-c644-6783-4d96" primary="false"/>
+        <categoryLink id="8b52-4dd6-3e8d-4d5f" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+        <categoryLink id="1276-b10f-7b88-2d4e" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+        <categoryLink id="c54c-5466-9be6-3d0f" name="Warrior" hidden="false" targetId="9b03-d6ec-2b8b-f5cd" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dffa-ed0e-d922-a817" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6bd-a2cc-dc03-cf96" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a42c-3b14-c30b-47b6" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="bd0b-4b08-4f4b-1459" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7584-a891-2b10-c287" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3354-345a-3086-b929" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0297-77b5-3203-ae8a" name="Covenant Carbine" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="8699-749d-45d5-e367" name="(W) Covenant Carbine" hidden="false" targetId="970f-cea2-8621-74e2" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3ef2-025b-1aec-9ad7" name="Needle Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="9fb8-e009-e008-6de6" name="Supercombine (Needle Weapons)" hidden="false" targetId="38cd-2aa0-911f-0492" type="rule"/>
+                <infoLink id="c637-c327-1700-91a8" name="(W) Needle Rifle" hidden="false" targetId="0c1c-794e-c611-237b" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f5df-f154-02aa-8955" name="Beam Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="9573-7d28-ec24-16a3" name="Critical Hit (Sniper/Beam Rifle)" hidden="false" targetId="225c-cc34-b817-6f56" type="rule"/>
+                <infoLink id="6989-7443-b840-c8cd" name="Heavy Weapon (Sniper/Beam Rifle, Fuel Rod Gun)" hidden="false" targetId="e662-bd81-cc8d-3368" type="rule"/>
+                <infoLink id="82cd-fff8-2867-202d" name="(W) Beam Rifle" hidden="false" targetId="b143-51a1-de76-76d4" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bd2f-7e06-48b8-6753" name="T&apos;vaoan Minor" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="482e-2c7e-a15e-1c3d" name="T&apos;vaoan Minor" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">8&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D6</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D10</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D6</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">5</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x2 W</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="71bd-e749-3380-a24e" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="516b-7130-2607-0ff2" name="(A) Blitz" hidden="false" targetId="5452-51a4-36ad-189e" type="profile"/>
+            <infoLink id="c3d6-00b2-eb23-df48" name="(A) Vicious Charge" hidden="false" targetId="3ec5-4d28-08f5-b56f" type="profile"/>
+            <infoLink id="9db5-0b38-c0fb-9af3" name="(A) Carnivore" hidden="false" targetId="1e77-6f24-975d-a693" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="255f-3727-82a8-9ce5" name="(W) Plasma Pistol" hidden="false" targetId="66d6-2ff3-c313-6ca0" type="profile"/>
+        <infoLink id="4423-9fa3-44d9-b325" name="Charged Shot (Plasma Pistol)" hidden="false" targetId="7c99-db0a-2527-9263" type="rule"/>
+        <infoLink id="b80a-e6d8-7fa6-db61" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="84ef-6d1c-f6b6-48db" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="a38e-6d8d-a997-43ee" name="Jackal" hidden="false" targetId="999f-c644-6783-4d96" primary="false"/>
+        <categoryLink id="2c8e-31e8-cd1c-9b48" name="Skirmisher" hidden="false" targetId="1d29-4099-e6cf-cea0" primary="false"/>
+        <categoryLink id="85f0-af3e-9400-a019" name="Supply Limit 3" hidden="false" targetId="4d0a-3a00-5238-450e" primary="false"/>
+        <categoryLink id="f76b-7636-ca64-7235" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+        <categoryLink id="7f9e-9865-1039-3b18" name="Warrior" hidden="false" targetId="9b03-d6ec-2b8b-f5cd" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b016-d60b-85ec-f711" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9b5-3544-58fa-28aa" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="92b0-48c2-1789-fd4c" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aef0-c6d4-8f1e-a9bb" name="T&apos;vaoan Murmillo" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="87b6-1fb7-a771-62ce" name="T&apos;vaoan Murmillo" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">8&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D8</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D12</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D8</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">6</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">3*</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x2 W</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="3a9a-56c3-8672-8664" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="cfec-b5d5-8d9e-f9e5" name="(A) Blitz" hidden="false" targetId="5452-51a4-36ad-189e" type="profile"/>
+            <infoLink id="b05f-ba2c-b0ee-6a94" name="(A) Vicious Charge" hidden="false" targetId="3ec5-4d28-08f5-b56f" type="profile"/>
+            <infoLink id="d8ae-e2c7-0b3f-6665" name="(A) Energy Bracers" hidden="false" targetId="862b-62d7-d9e5-139c" type="profile"/>
+            <infoLink id="3814-f205-890f-2e29" name="(A) Carnivore" hidden="false" targetId="1e77-6f24-975d-a693" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="9169-6b8a-713b-3c2c" name="(W) Plasma Pistol" hidden="false" targetId="66d6-2ff3-c313-6ca0" type="profile"/>
+        <infoLink id="5d00-4a00-baa1-06d0" name="Charged Shot (Plasma Pistol)" hidden="false" targetId="7c99-db0a-2527-9263" type="rule"/>
+        <infoLink id="ca9e-481b-5cef-f4fa" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7e26-2480-1cd5-168e" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="336c-a2a5-5d7f-38d8" name="Jackal" hidden="false" targetId="999f-c644-6783-4d96" primary="false"/>
+        <categoryLink id="d13b-3367-42bd-5b24" name="Murmillo" hidden="false" targetId="31e0-c2b8-13ea-9f9d" primary="false"/>
+        <categoryLink id="e199-4054-72dd-56ab" name="Skirmisher" hidden="false" targetId="1d29-4099-e6cf-cea0" primary="false"/>
+        <categoryLink id="46c6-20ac-685f-545c" name="Supply Limit 1" hidden="false" targetId="862d-41b5-21ec-3d9f" primary="false"/>
+        <categoryLink id="0d18-d9d0-d094-7dae" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e0e2-b666-1e0c-8a70" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c514-e1fa-0bf1-723a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d575-6e99-5f10-7610" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a5ca-247e-ee70-4568" name="Stealth Sangheili" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="423e-ee70-9798-00e5" name="Sangheili Stealth " hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D8</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D8</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D8</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">8</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R x1 W</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="f09f-3a19-cfce-c9e5" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="be4e-d026-fb50-7a10" name="(A) Guileful Combat" hidden="false" targetId="8394-19ef-08e5-849c" type="profile"/>
+            <infoLink id="b18e-76ea-f270-2fed" name="(A) Assassinate" hidden="false" targetId="c42e-bab1-7652-24dc" type="profile"/>
+            <infoLink id="cba5-7254-e28a-eccf" name="(A) Active Camouflage" hidden="false" targetId="1737-6030-c00e-9056" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="d764-4905-db6c-9e3e" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="23c2-842d-f855-9b26" name="Elite" hidden="false" targetId="f68e-47cd-891e-6f9b" primary="false"/>
+        <categoryLink id="c1c6-4d59-353c-40a4" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+        <categoryLink id="f7cc-7c26-0ec5-9353" name="Warrior" hidden="false" targetId="9b03-d6ec-2b8b-f5cd" primary="false"/>
+        <categoryLink id="dbba-0577-684e-379a" name="New CategoryLink" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="520d-c67e-ce1b-7e69" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2adf-2a50-f87d-f69d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2b6e-fe8c-5512-98b0" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8026-43d7-4d84-6de2" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6ed-8edb-45e4-f11c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e74-3c67-84fc-a4bf" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f664-91e2-a5ff-d849" name="Energy Sword" hidden="false" collective="false" import="true" targetId="a6ea-e2f0-89a4-1831" type="selectionEntry"/>
+            <entryLink id="2ec7-c53c-1317-efad" name="Plasma Rifle" hidden="false" collective="false" import="true" targetId="9ee9-6968-897c-354b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="434b-08c4-b7c8-e4e9" name="Unggoy Spec-Ops" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8ef6-96f0-4cc5-3de7" name="Unggoy Spec-Ops" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">5&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D4</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D4</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D4</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">6</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 B</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="ce5f-de44-6cc7-eb08" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="2ce6-9e15-a001-ebe2" name="(A) Craven" hidden="false" targetId="0d62-f660-4c7e-7e5a" type="profile"/>
+            <infoLink id="ec51-0b87-4f56-86a7" name="(A) Active Camouflage" hidden="false" targetId="1737-6030-c00e-9056" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="deb9-39e8-6a2a-cefb" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="f4d6-9a26-ec35-0a3f" name="Grunt" hidden="false" targetId="a379-d075-75c7-491e" primary="false"/>
+        <categoryLink id="0fec-8e27-c64f-fb86" name="New CategoryLink" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="true"/>
+        <categoryLink id="92f1-3f76-8c5a-4967" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+        <categoryLink id="57e0-1546-bb58-5078" name="Special Operations" hidden="false" targetId="9b25-bc71-958f-3fbd" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4e4c-ab48-4b91-3e6a" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bbf-b089-0f81-375f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0193-7c05-3964-f293" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="12.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="cb96-bc89-c6cc-ad7b" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d20-17ed-6d4c-11f7" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4b2-19de-51ed-cd34" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a946-58a7-bbaf-10c1" name="Plasma Pistol" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="c176-9ea2-2a07-51ff" name="(W) Plasma Pistol" hidden="false" targetId="66d6-2ff3-c313-6ca0" type="profile"/>
+                <infoLink id="5f11-1452-1d6b-58d6" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+                <infoLink id="69e3-79e5-e21a-c294" name="Charged Shot (Plasma Pistol)" hidden="false" targetId="7c99-db0a-2527-9263" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0988-f835-5481-0ce0" name="Needler" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="7956-467f-aedd-7d4a" name="(W) Needler" hidden="false" targetId="3a71-9d08-479c-2f6a" type="profile"/>
+                <infoLink id="a9f1-3c45-49a1-7805" name="Self-Guided (Needler)" hidden="false" targetId="7c1f-2f47-945d-c796" type="rule"/>
+                <infoLink id="636e-2358-e7d7-32df" name="Supercombine (Needle Weapons)" hidden="false" targetId="38cd-2aa0-911f-0492" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="042c-84da-cbae-0890" name="Unggoy Ultra" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="dc0e-c5d0-3944-06d7" name="Unggoy Ultra" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">5&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D6</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D6</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D4</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">7</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 B</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="9f40-8aec-5413-d70c" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="1463-b42c-93b7-7b9b" name="(A) Unggoy Exemplar" hidden="false" targetId="ad50-5567-1887-111b" type="profile"/>
+            <infoLink id="1dba-8db0-68c3-d647" name="(A) Opportunist" hidden="false" targetId="7c70-e786-d9af-fb17" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="5346-f43d-2cb0-28b8" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="482f-d4dc-c4a6-1935" name="Grunt" hidden="false" targetId="a379-d075-75c7-491e" primary="false"/>
+        <categoryLink id="f86d-8dbb-82e7-577c" name="New CategoryLink" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="true"/>
+        <categoryLink id="ded6-2d83-8353-fc9b" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+        <categoryLink id="163b-c817-c4cd-49d7" name="Ultra" hidden="false" targetId="131a-99b8-518a-7ec1" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4bfc-ee20-3415-5bc3" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a407-f4e1-8da0-4d29" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ecff-ef9e-b2ad-02e4" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="12.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8c46-4b2b-e27f-2bbd" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d419-b003-134f-705e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cda-822d-df06-e510" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f71e-864a-8d65-e030" name="Plasma Pistol" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="1ea4-eafa-71a0-2086" name="(W) Plasma Pistol" hidden="false" targetId="66d6-2ff3-c313-6ca0" type="profile"/>
+                <infoLink id="96e1-c0cb-faa2-7896" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+                <infoLink id="47d8-c670-6a49-783f" name="Charged Shot (Plasma Pistol)" hidden="false" targetId="7c99-db0a-2527-9263" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="baff-8bde-a0e9-8013" name="Needler" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="8f09-52df-83a0-f0c7" name="(W) Needler" hidden="false" targetId="3a71-9d08-479c-2f6a" type="profile"/>
+                <infoLink id="940a-d782-7df6-a02c" name="Self-Guided (Needler)" hidden="false" targetId="7c1f-2f47-945d-c796" type="rule"/>
+                <infoLink id="da6a-bc18-7db8-b3f4" name="Supercombine (Needle Weapons)" hidden="false" targetId="38cd-2aa0-911f-0492" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2371-c465-1218-cd45" name="Unggoy Heavy" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="f384-8fa8-a8a1-bd24" name="Unggoy Heavy" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">5&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D4</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D4</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D4</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">6</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 B</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="7010-80de-a23f-c4ad" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="8acc-14ce-5f03-337f" name="(A) Craven" hidden="false" targetId="0d62-f660-4c7e-7e5a" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="21ad-06cb-919e-691c" name="(W) Fuel Rod Gun" hidden="false" targetId="7cb0-56a8-17d3-9abd" type="profile"/>
+        <infoLink id="cd24-a961-6536-0c41" name="Blast X&quot; (Blast Weapons)" hidden="false" targetId="9644-d14a-7e54-6bcf" type="rule"/>
+        <infoLink id="4e89-451b-c24a-9be1" name="Heavy Weapon (Sniper/Beam Rifle, Fuel Rod Gun)" hidden="false" targetId="e662-bd81-cc8d-3368" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4a4a-aa65-d34b-1634" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="287d-8c6e-307a-c917" name="Grunt" hidden="false" targetId="a379-d075-75c7-491e" primary="false"/>
+        <categoryLink id="00a2-020a-0f58-56e2" name="Warrior" hidden="false" targetId="9b03-d6ec-2b8b-f5cd" primary="false"/>
+        <categoryLink id="7f2b-0f84-d652-b6d6" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+        <categoryLink id="73b0-0346-de7c-7d1c" name="New CategoryLink" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5f39-6965-84b6-8bba" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5929-467c-1ff4-e3dd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4443-1cc7-28a6-6146" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f25c-3156-0e1c-e4b9" name="Sangheili Ultra" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="f286-88c3-a6e0-2fab" name="Sangheili Ultra" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D10</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D10</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D10</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">10</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">4</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R x1 W</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="0d8b-ab00-1592-f781" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="08dc-cc6d-9525-3c8f" name="(A) Advanced Shields" hidden="false" targetId="9c2f-e27b-1c94-10ac" type="profile"/>
+            <infoLink id="1d86-5f4b-5f60-7c95" name="(A) Honourable Combat" hidden="false" targetId="aa0a-175a-cafa-b630" type="profile"/>
+            <infoLink id="0e4d-16e0-6c09-3be3" name="(A) Wrathful Strike" hidden="false" targetId="d60f-b2cd-9624-40bf" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="cfa1-0645-8f5c-6d4b" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="ba78-7583-5317-9632" name="Elite" hidden="false" targetId="f68e-47cd-891e-6f9b" primary="false"/>
+        <categoryLink id="2d90-2926-412d-df61" name="New CategoryLink" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="true"/>
+        <categoryLink id="0f6a-595f-7fe1-78bd" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+        <categoryLink id="36d4-5df7-d01d-bda9" name="Ultra" hidden="false" targetId="131a-99b8-518a-7ec1" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a630-98a4-6ce5-dc03" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e7d-a82c-7362-f79d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cd01-bb3e-b8d2-4d2d" name="Over Supply Limit (Concussion Rifle)" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f220-e34d-1f8a-9a2b" name="Over Supply Limit (Any Other Weapon)" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="30.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e0eb-768f-6b94-b4e0" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6769-6944-289f-a5e1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="377c-82d8-4ab7-9586" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="aaed-7948-5801-7cb0" name="Energy Sword and Plasma Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="cdf8-8f7c-f86f-885f" name="Melee Weapon (Any Melee Weapon)" hidden="false" targetId="885a-dab6-3fe2-2322" type="rule"/>
+                <infoLink id="7965-decb-2878-8ceb" name="(W) Energy Sword" hidden="false" targetId="bee8-481d-e5d6-bff5" type="profile"/>
+                <infoLink id="ae1c-e75d-8ba9-bca0" name="(W) Plasma Rifle" hidden="false" targetId="4bab-e5e1-bb6b-017c" type="profile"/>
+                <infoLink id="33fb-91be-b8dd-2689" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e073-a09c-e010-0ed0" name="Dual Plasma Rifles" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="200a-f636-8dd2-e0de" name="(W) Dual Plasma Rifles" hidden="false" targetId="a7e0-3459-f0f3-bf9b" type="profile"/>
+                <infoLink id="3d03-51ac-7fbc-e05e" name="Inaccurate (Dual Plasma Rifles)" hidden="false" targetId="cd86-ad78-97db-3e7b" type="rule"/>
+                <infoLink id="3d57-5a92-993b-4145" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="42a2-54be-f8ed-e714" name="Concussion Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="852d-c684-3c13-bc60" name="(W) Concussion Rifle" publicationId="b036-cfb3-c8ed-e13e" page=" [Blast (1&quot;)]" hidden="false" targetId="2f8e-a3ab-5b7c-0d06" type="profile"/>
+                <infoLink id="13f0-693a-6239-e4bf" name="Disorientating Blast (Concussion Rifle)" hidden="false" targetId="9cc4-7681-441f-9f73" type="rule"/>
+                <infoLink id="3b69-594b-84d2-9418" name="Blast X&quot; (Blast Weapons)" hidden="false" targetId="9644-d14a-7e54-6bcf" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="85.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="583b-9b66-5d52-e49c" name="Supreme Commander Rtas &apos;Vadumee" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="adc9-5dd4-9443-1308" name="Supreme Commander Rtas &apos;Vadumee" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">7&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D10</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D10</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D12</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">12</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">4</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R x1 W</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="7ab4-adce-6752-4033" name="Abilities" hidden="false">
+          <profiles>
+            <profile id="abd1-2ff8-2c57-ccaa" name="(A) Pragmatic Combat" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">When making attacks against targets within 12&quot; range, this unit may reroll a single attack die roll of 1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="4fdf-5aa1-65bb-3b42" name="(A) Close Quarter Combat" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Once per turn, after slaying a unit within 6&quot;, if it is not engaged, this unit may immediately make a free ranged attack or 3&quot; move.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="010d-fc9d-8098-b4ec" name="Special Operations Command" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Increase the supply limit on all non-character &apos;Special Operations&apos; units by 2.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="9653-44ed-031c-d39a" name="Animosity" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">All &apos;Brute&apos; units lower their supply limit to 1. In addition, Commands targeting allied &apos;Brute&apos; units cost an additional Requisition point when issued during the Command phase.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="da27-72c3-46bd-060f" name="Swift and Silent" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">After deployment is complete, but before the first battle round, all &apos;Special Operations&apos; units may make a free 3&quot; move.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="9dac-a77d-64ef-e0ed" name="Respect of the Unggoy" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">As long as Rtas &apos;Vadumee is on the board, all &apos;Grunt&apos; units ignore their Craven trait.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="0f9e-fe7d-697e-b2e3" name="These Are My Elites" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Whenever an &apos;Elite&apos; unit is slain, you gain a Retribution Point. Spend a single Retribution Point to reduce the cost of a command issued to Rtas &apos;Vadumee to zero.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="7da3-8082-41c4-af8a" name="Sworn Vengeance" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Should Rtas &apos;Vadumee be slain, you may still use the &apos;Berserk&apos; and &apos;Blood Oath&apos; commands for the rest of the game.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="85a8-502f-3ff5-d8c9" name="(A) Advanced Shields" hidden="false" targetId="9c2f-e27b-1c94-10ac" type="profile"/>
+            <infoLink id="37a9-c377-3a7b-e950" name="(A) Active Camouflage" hidden="false" targetId="1737-6030-c00e-9056" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="7bb5-b37e-c4b6-b9b1" name="Character" hidden="false" targetId="4f4d-9b88-a239-2cc5" primary="false"/>
+        <categoryLink id="e2c3-30fe-2ba6-1557" name="New CategoryLink" hidden="false" targetId="bee9-6a5a-eada-e330" primary="true"/>
+        <categoryLink id="905f-79c2-abee-f0e3" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="6cd2-33b2-f4c6-9cb7" name="Elite" hidden="false" targetId="f68e-47cd-891e-6f9b" primary="false"/>
+        <categoryLink id="cd34-4043-3fde-9694" name="Special Operations" hidden="false" targetId="9b25-bc71-958f-3fbd" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4988-24dd-c966-90e4" name="Energy Sword and Plasma Rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a89-be16-f0c3-e230" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51c3-751d-3088-4958" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="ba6b-6848-a98e-016a" name="Melee Weapon (Any Melee Weapon)" hidden="false" targetId="885a-dab6-3fe2-2322" type="rule"/>
+            <infoLink id="2b72-2570-669d-e32d" name="(W) Energy Sword" hidden="false" targetId="bee8-481d-e5d6-bff5" type="profile"/>
+            <infoLink id="7b40-2ff0-a39c-80af" name="(W) Plasma Rifle" hidden="false" targetId="4bab-e5e1-bb6b-017c" type="profile"/>
+            <infoLink id="60a3-5456-35b0-a892" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+            <infoLink id="0d7e-6e20-9dc2-427d" name="(A) Parry" hidden="false" targetId="211e-91fe-ddd5-ccfe" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
